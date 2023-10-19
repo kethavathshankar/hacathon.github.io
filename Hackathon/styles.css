@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+body{
+    background-color: antiquewhite;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    background-color: black;
+    color: white;
+}
+
+nav ul li{
+    padding: 0 12px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.brand img{
+    width: 89px;
+    padding: 0px;
+   left:0px;
+   top:1px;
+   
+}
+
+.relogo img{
+    width: 350px;
+    padding: 0px;
+   left:0px;
+   top:1px;
+   
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+nav ul {
+    list-style-type: none;
+    background-color: #333;
+    text-align: center;
+    padding: 10px;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+section {
+    padding: 20px;
+    background-color: #fff;
+    margin: 20px;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+}
+.city{
+    align-items: center;
+}
+.cities{
+    padding: 0px;
+    position: absolute;
+}
+.sevices{
+    text-align: center;
+
+}
+.box {
+    border: 4px solid black;
+    background-color: grey;
+    margin: 4px 0px;
+    padding: 23px;
+    width: 33%;
+    box-sizing: border-box;
+    display: inline-block;
+}
+/* Auto change images */
+.autochange{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    font-family: sans-serif;
+}
+.Section_top{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    background-image: url(banners/home-slide-6.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    justify-content: center;
+    animation: change 10s infinite ease-in-out;
+}
+.content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+
+}
+.content h1{
+    color: #fff;
+    font-size: 60px;
+    letter-spacing: 15px;
+}
+.content h1 span{
+    color: #111;
+}
+.content a{
+    background: #85c1ee;
+    padding: 10px 24px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.content a:hover{
+    background: #034e88;
+    color: #fff;
+}
+@keyframes change{
+    0%
+    {
+        background-image: url(banners/home-slide-1.jpg);
+    }
+    20%
+    {
+        background-image: url(banners/home-slide-8.jpg);
+    }
+    40%
+    {
+        background-image: url(banners/home-slide-9.jpg);
+    }
+    60%
+    {
+        background-image: url(banners/home-slide-2.jpg);
+    }
+    80%
+    {
+        background-image: url(banners/home-slide-6.jpg);
+    }
+    100%
+    {
+        background-image: url(banners/home-slide-1.jpg);
+    }
+}
+
+.box1{
+    border: 4px solid black;
+    background-color: grey;
+    margin: 4px 150px;
+    padding: 100px;
+    width: 80%;
+    box-sizing: border-box;
+    display: inline-block;
+    
+}
+.relogo2 img{
+   margin: 4px 250px;
+   /* width: 20%; */
+   height: auto;
+}  
+#ourserveics li{
+    display: flexbox;
+}
+.box3 {
+    border: 4px solid white;
+    background-color: white;
+    margin: 3px 0px;
+    padding: 40px;
+    width: 20%;
+    box-sizing: border-box;
+    display: inline-block;
+}
+.box4{
+    border: 4px solid white;
+    background-color: white;
+    margin: 3px 0px;
+    padding: 40px;
+    width: 20%;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+ .hero{
+    height: 100vh;
+    width: 100%;
+    background-image: url(Car_Animation_Img/sky.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow-x: hidden;
+    top:0px;
+} 
+.highway{
+    height: 200px;
+    width: 500%;
+    display:block;
+    background-image: url(Car_Animation_Img/road.jpg);
+    position: absolute; 
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    z-index: 1;
+    background-repeat: repeat-x;
+    animation: highway 5s linear infinite;
+}
+@keyframes highway
+{
+    100%{
+        transform: translateX(-3400px);
+    }
+}
+ .city{
+    height: 200px;
+    width: 500%;
+    display:block;
+    background-image: url(Car_Animation_Img/city.png);
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    z-index: 1;
+    background-repeat: repeat-x;
+    animation: city 5s linear infinite;
+    position:relative;
+    top:204px;
+}
+@keyframes city{
+    100%{
+        transform: translateX(-1400px);
+    }
+} 
+.truck{
+    width: 400px;
+    left: 0%;
+    bottom: 0%;
+   
+    transform: translateX(-50%);
+    position: absolute; 
+    z-index: 2;
+}
+.truck img{
+    width: 100%;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+    margin: 0px 700px;
+    animation: truck 1s linear infinite;
+    position:relative;
+    top:-50px;
+    
+}
+@keyframes truck{
+    100%{
+        transform: translateY(5px);
+    }
+    50%{
+        transform: translateY(3px);
+    }
+    0%{
+        transform: translateY(5px);
+    }
+}
